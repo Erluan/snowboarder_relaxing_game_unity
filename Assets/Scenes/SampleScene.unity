@@ -1185,7 +1185,7 @@ SurfaceEffector2D:
   m_ColliderMask:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_Speed: 10
+  m_Speed: 20
   m_SpeedVariation: 0
   m_ForceScale: 0.1
   m_UseContactForce: 0
@@ -1203,6 +1203,7 @@ GameObject:
   - component: {fileID: 1375574101}
   - component: {fileID: 1375574102}
   - component: {fileID: 1375574103}
+  - component: {fileID: 1375574105}
   m_Layer: 0
   m_Name: Barry
   m_TagString: Untagged
@@ -1223,8 +1224,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDrag: 0.5
+  m_AngularDrag: 15
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
@@ -1279,6 +1280,19 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1375574105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1375574100}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e960f74933f74df8b7192e787a48a05, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  torqueAmount: 100
 --- !u!1 &1712406434
 GameObject:
   m_ObjectHideFlags: 3
